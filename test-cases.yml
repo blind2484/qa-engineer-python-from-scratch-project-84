@@ -231,3 +231,14 @@
     - Выбрать язык
   expected-result: |
     Язык сайта изменился на английский
+
+- summary: |
+    Проверка загрузки сайта по HTTPS
+  requirement: |
+    Сайт передаётся по HTTPS
+  prerequisites: |
+  test-data: |
+  steps:
+    - открыть полный адрес сайта
+  expected-result: |
+    Адрес начинается с HTTPS

@@ -110,8 +110,8 @@ bugreports:
       Microsoft Windows 10 Домашняя Версия 10.0.19045 Сборка 19045;
       FireFox 151.0.3 (64-разрядный)
     steps-to-reproduce:
-      - зайти на сайт
-      - зарегистрироваться
+      зайти на сайт
+      зарегистрироваться (ошибка)
     expected-result: |
       Создан новый пользователь
     actual-result: |
@@ -124,8 +124,8 @@ bugreports:
       Microsoft Windows 10 Домашняя Версия 10.0.19045 Сборка 19045;
       FireFox 151.0.3 (64-разрядный)
     steps-to-reproduce:
-      - зайти на сайт
-      - авторизироваться
+      зайти на сайт
+      авторизироваться (ошибка)
     expected-result: |
       Пользователь авторизирован
     actual-result: |
@@ -138,12 +138,12 @@ bugreports:
       Microsoft Windows 10 Домашняя Версия 10.0.19045 Сборка 19045;
       FireFox 151.0.3 (64-разрядный)
     steps-to-reproduce:
-      - открыть страницу магазина https://products-store.hexlet.app/
-      - нажать на "Add to cart" у любого товара
-      - выбрать количество товара
-      - нажать "Добавить"
-      - закрыть страницу
-      - открыть страницу
+      открыть страницу магазина https://products-store.hexlet.app/
+      нажать на "Add to cart" у любого товара
+      выбрать количество товара
+      нажать "Добавить"
+      закрыть страницу магазина
+      открыть страницу магазина https://products-store.hexlet.app/ (ошибка)
     expected-result: |
       Запрос на количество добавляемого товара;
       Товар добавлен в корзину;
@@ -161,11 +161,11 @@ bugreports:
       Microsoft Windows 10 Домашняя Версия 10.0.19045 Сборка 19045;
       FireFox 151.0.3 (64-разрядный)
     steps-to-reproduce:
-      - открыть страницу магазина https://products-store.hexlet.app/
-      - нажать на "Add to cart" у любого товара
-      - перейти в корзину
-      - нажать "Checkout"
-      - закрыть всплывающее окно "Order placed successfully"
+      открыть страницу магазина https://products-store.hexlet.app/
+      нажать на "Add to cart" у любого товара
+      перейти в корзину
+      нажать "Checkout" (ошибка)
+      закрыть всплывающее окно "Order placed successfully"
     expected-result: |
       Заказ оформлен
     actual-result: |
@@ -178,11 +178,11 @@ bugreports:
       Microsoft Windows 10 Домашняя Версия 10.0.19045 Сборка 19045;
       FireFox 151.0.3 (64-разрядный)
     steps-to-reproduce:
-      - открыть страницу магазина https://products-store.hexlet.app/
-      - нажать на "Add to cart" у любого товара
-      - перейти в корзину
-      - нажать "Checkout"
-      - закрыть всплывающее окно "Order placed successfully" "крестиком"
+      открыть страницу магазина https://products-store.hexlet.app/
+      нажать на "Add to cart" у любого товара
+      перейти в корзину
+      нажать "Checkout"
+      закрыть всплывающее окно "Order placed successfully" "крестиком" (ошибка)
     expected-result: |
       Окно закрыто
     actual-result: |
@@ -195,12 +195,12 @@ bugreports:
       Microsoft Windows 10 Домашняя Версия 10.0.19045 Сборка 19045;
       FireFox 151.0.3 (64-разрядный)
     steps-to-reproduce:
-      - открыть страницу магазина https://products-store.hexlet.app/
-      - добавить товары в корзину
-      - перейти в корзину
-      - открыть DevTools
-      - открыть режим адаптивного дизайна
-      - выбрать устройство Pixel 5 Androoid 10
+      открыть страницу магазина https://products-store.hexlet.app/
+      добавить товары в корзину
+      перейти в корзину
+      открыть DevTools
+      открыть режим адаптивного дизайна
+      выбрать устройство Pixel 5 Androoid 10 (ошибка)
     expected-result: |
       Сайт отображается корректно
     actual-result: |
@@ -213,9 +213,10 @@ bugreports:
       Microsoft Windows 10 Домашняя Версия 10.0.19045 Сборка 19045;
       FireFox 151.0.3 (64-разрядный)
     steps-to-reproduce:
-      - открыть страницу магазина https://products-store.hexlet.app/
-      - в поле "From" ввести значение 6
-      - в поле "To" ввести значение 9
+      открыть страницу магазина https://products-store.hexlet.app/
+      в поле "From" ввести значение 6
+      в поле "To" ввести значение 9
+      отображение товара (ошибка)
     expected-result: |
       Отображаются только товары текущая цена которых выше 6$ и ниже 9$
     actual-result: |
@@ -228,12 +229,13 @@ bugreports:
       Microsoft Windows 10 Домашняя Версия 10.0.19045 Сборка 19045;
       FireFox 151.0.3 (64-разрядный)
     steps-to-reproduce:
-      - открыть страницу магазина https://products-store.hexlet.app/
-      - в поле "From" ввести значение "asd@"
+      открыть страницу магазина https://products-store.hexlet.app/
+      в поле "From" ввести значение "asd@" (ошибка)
     expected-result: |
       Ввести буквы и символы невозможно
     actual-result: |
       буквы и символы вводятся
+
   - summary: |
       Фильтры "Price" действуют не на весь список товаров, а только на товары на текущей страницы
     environment: |
@@ -241,41 +243,44 @@ bugreports:
       Microsoft Windows 10 Домашняя Версия 10.0.19045 Сборка 19045
       FireFox 151.0.3 (64-разрядный)
     steps-to-reproduce:
-      - открыть страницу магазина https://products-store.hexlet.app/
-      - в поле "From" ввести значение 12
-      - в поле "To" ввести значение 17
+      открыть страницу магазина https://products-store.hexlet.app/
+      в поле "From" ввести значение 12
+      в поле "To" ввести значение 17
+      отображение товара (ошибка)
     expected-result: |
       Отображаются все товары, из всего списка, попадающие в диапозон цен
     actual-result: |
       Отображаются только товары, присутствующие на текущей странице без фильтра
   
   - summary: |
-      В фильтре "Brand" отображаются только бренды товаров с на текущей страницы
+      В фильтре "Brand" отображаются только бренды товаров с текущей страницы
     environment: |
       MSI P75 Creator 9SE
       Microsoft Windows 10 Домашняя Версия 10.0.19045 Сборка 19045
       FireFox 151.0.3 (64-разрядный)
-    steps-to-reproduce:
-      - открыть страницу магазина https://products-store.hexlet.app/
+    steps-to-reproduce: |
+      открыть страницу магазина https://products-store.hexlet.app/
+      проверить содержание фильтра "Brend" (ошибка)
     expected-result: |
       Отображаются все бренды товаров, из всего списка
     actual-result: |
       Отображаются только бренды товаров, присутствующих на текущей странице без фильтра
-  
+
   - summary: |
-      В фильтре "Category" отображаются только категории товаров с на текущей страницы
+      В фильтре "Category" отображаются только категории товаров с текущей страницы
     environment: |
       MSI P75 Creator 9SE
       Microsoft Windows 10 Домашняя Версия 10.0.19045 Сборка 19045
       FireFox 151.0.3 (64-разрядный)
-    steps-to-reproduce:
-      - открыть страницу магазина https://products-store.hexlet.app/
-      - Нажать на выпадающий список "Category"
+    steps-to-reproduce: |
+      открыть страницу магазина https://products-store.hexlet.app/
+      Нажать на выпадающий список "Category"
+      проверить содержание фильтра "Category" (ошибка)
     expected-result: |
       Отображаются все категории товаров, из всего списка
     actual-result: |
-      Отображаются только категории товаров, присутствующих на текущей странице без фильтра
-  
+      Отображаются только категории товаров, присутствующих на текущей странице без фильтра  
+
   - summary: |
       Фильтр "Category" нельзя выбрать несколько категорий товара
     environment: |
@@ -283,10 +288,10 @@ bugreports:
       Microsoft Windows 10 Домашняя Версия 10.0.19045 Сборка 19045
       FireFox 151.0.3 (64-разрядный)
     steps-to-reproduce:
-      - открыть страницу магазина https://products-store.hexlet.app/
-      - Нажать на выпадающий список "Category"
-      - выбрать какую-нибудь категорию
-      - выбрать ещё одну категорию
+      открыть страницу магазина https://products-store.hexlet.app/
+      Нажать на выпадающий список "Category"
+      выбрать какую-нибудь категорию
+      выбрать ещё одну категорию (ошибка)
     expected-result: |
       Отображаются товары двух категорий
     actual-result: |
@@ -299,9 +304,9 @@ bugreports:
       Microsoft Windows 10 Домашняя Версия 10.0.19045 Сборка 19045
       FireFox 151.0.3 (64-разрядный)
     steps-to-reproduce:
-      - открыть страницу магазина https://products-store.hexlet.app/
-      - открыть карточку любого товара
-      - Оценить товар
+      открыть страницу магазина https://products-store.hexlet.app/
+      открыть карточку любого товара
+      Оценить товар (ошибка)
     expected-result: |
       Товар получает оценку от 1 до 5
     actual-result: |

@@ -21,6 +21,7 @@
     После повторного открытия страницы товар сохранился в корзине
   actual-result: |
     Счётчик изменился, товар в корзине отобразился, но нет ни уведомления о добавлении, ни запросов в DevTools, а после повторного открытия страницу корзина пустая
+    # screenshots/HexletStore_v1_add_no_request_00.png
 
 - summary: |
     Невозможно оформить заказ
@@ -38,6 +39,7 @@
     Заказ оформлен
   actual-result: |
     Статус 500 в DevTools
+    # screenshots/HexletStore_v1_order_error_00.png
 
 - summary: |
     всплывающее окно "Order placed successfully" не закрывается "крестиком"
@@ -71,6 +73,8 @@
     Сайт отображается корректно
   actual-result: |
     Вёрстка сайта нарушена
+    # screenshots/HexletStore_v1_adaptability_bug_00.png
+    # screenshots/HexletStore_v1_adaptability_bug_01.png
 
 - summary: |
     Фильтр "Price" не учитывает скидку
@@ -100,6 +104,7 @@
     Ввести буквы и символы невозможно
   actual-result: |
     буквы и символы вводятся
+    # screenshots/HexletStore_v1_price_bug_00.png
 
 - summary: |
     Позиция "English" не имеет картинки флага
@@ -114,6 +119,7 @@
     Все три языка снабжены картинкой флага
   actual-result: |
     У "English" флага нет
+    # screenshots/HexletStore_v1_language_bug_00.png
 
 - summary: |
     На первой странице списка товаров есть кнопка "Previous"

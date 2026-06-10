@@ -139,6 +139,7 @@ bugreports:
       После повторного открытия страницы товар сохранился в корзине
     actual-result: |
       Счётчик изменился, товар в корзине отобразился, но нет ни уведомления о добавлении, ни запросов в DevTools, а после повторного открытия страницу корзина пустая
+      # screenshots/HexletStore_v2_add_no_request_00.png
   
   - summary: |
       Невозможно оформить заказ
@@ -156,6 +157,7 @@ bugreports:
       Заказ оформлен
     actual-result: |
       Статус 500 в DevTools
+      # screenshots/HexletStore_v2_order_error_00.png
   
   - summary: |
       всплывающее окно "Order placed successfully" не закрывается "крестиком"
@@ -191,6 +193,7 @@ bugreports:
       Сайт отображается корректно
     actual-result: |
       Вёрстка сайта нарушена
+      # screenshots/HexletStore_v2_adaptability_bug_00.png
   
   - summary: |
       Фильтр "Price" не учитывает скидку
@@ -220,6 +223,7 @@ bugreports:
       Ввести буквы и символы невозможно
     actual-result: |
       буквы и символы вводятся
+      # screenshots/HexletStore_v2_price_bug_00.png
 
   - summary: |
       Фильтры "Price" действуют не на весь список товаров, а только на товары на текущей страницы
@@ -280,4 +284,19 @@ bugreports:
       Отображаются товары двух категорий
     actual-result: |
       Отображаются только товары одной из категорий. Категорию можно поменять, но нельзя выбрать несколько
-  
+
+  - summary: |
+      Проверка поиска товаров по невалидному ключевому слову
+    environment: |
+      MSI P75 Creator 9SE
+      Microsoft Windows 10 Домашняя Версия 10.0.19045 Сборка 19045
+      FireFox 151.0.3 (64-разрядный)
+    steps-to-reproduce:
+      открыть страницу магазина https://products-store.hexlet.app/
+      Кликнуть на поле "Search"
+      Набрать "drey@#"
+    expected-result: |
+      Отобразится сообщение, что ничего не найдено
+    actual-result: |
+      Отображаются все товары на странице
+      # screenshots/HexletStore_v2_price_bug_00.png  
